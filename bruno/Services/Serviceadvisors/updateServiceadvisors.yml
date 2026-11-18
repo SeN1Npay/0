@@ -1,0 +1,22 @@
+info:
+  name: updateServiceadvisors
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: http://localhost:8080/Maven/Serviceadvisors/updateServiceadvisors?iduser=12&idadvisor=12
+  params:
+    - name: iduser
+      value: "12"
+      type: query
+    - name: idadvisor
+      value: "12"
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

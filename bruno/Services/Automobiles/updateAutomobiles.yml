@@ -1,0 +1,37 @@
+info:
+  name: updateAutomobiles
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: http://localhost:8080/Maven/Automobiles/updateAutomobiles?idcustomer=2&idmodel=2&vin=TEST000001&registrationnumber=A444BC154&productionyear=2018&photolink=photos/car1.jpg&idautomobile=14
+  params:
+    - name: idcustomer
+      value: "2"
+      type: query
+    - name: idmodel
+      value: "2"
+      type: query
+    - name: vin
+      value: TEST000001
+      type: query
+    - name: registrationnumber
+      value: A444BC154
+      type: query
+    - name: productionyear
+      value: "2018"
+      type: query
+    - name: photolink
+      value: photos/car1.jpg
+      type: query
+    - name: idautomobile
+      value: "14"
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

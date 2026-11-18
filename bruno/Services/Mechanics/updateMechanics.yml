@@ -1,0 +1,22 @@
+info:
+  name: updateMechanics
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: http://localhost:8080/Maven/Mechanics/updateMechanics?iduser=12&idmechanic=12
+  params:
+    - name: iduser
+      value: "12"
+      type: query
+    - name: idmechanic
+      value: "12"
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

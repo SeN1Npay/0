@@ -1,0 +1,22 @@
+info:
+  name: addServices
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:8080/Maven/Services/addServices?name=Замена кардана&cost=3000
+  params:
+    - name: name
+      value: Замена кардана
+      type: query
+    - name: cost
+      value: "3000"
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

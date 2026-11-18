@@ -1,0 +1,19 @@
+info:
+  name: deleteAutomobiles
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: http://localhost:8080/Maven/Automobiles/deleteAutomobiles?idautomobile=14
+  params:
+    - name: idautomobile
+      value: "14"
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

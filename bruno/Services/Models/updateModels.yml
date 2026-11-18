@@ -1,0 +1,25 @@
+info:
+  name: updateModels
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: http://localhost:8080/Maven/Models/updateModels?idbrand=11&name=Camry&idmodel=11
+  params:
+    - name: idbrand
+      value: "11"
+      type: query
+    - name: name
+      value: Camry
+      type: query
+    - name: idmodel
+      value: "11"
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

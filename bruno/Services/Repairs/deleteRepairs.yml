@@ -1,0 +1,19 @@
+info:
+  name: deleteRepairs
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: http://localhost:8080/Maven/Repairs/deleteRepairs?idrepair=11
+  params:
+    - name: idrepair
+      value: "11"
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,31 @@
+info:
+  name: addSalaries
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:8080/Maven/Salaries/addSalaries?iduser=11&periodstart=2024-01-01&periodend=2024-01-31&amount=50000&paymentdate=2024-02-05
+  params:
+    - name: iduser
+      value: "11"
+      type: query
+    - name: periodstart
+      value: 2024-01-01
+      type: query
+    - name: periodend
+      value: 2024-01-31
+      type: query
+    - name: amount
+      value: "50000"
+      type: query
+    - name: paymentdate
+      value: 2024-02-05
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

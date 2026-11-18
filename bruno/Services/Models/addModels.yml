@@ -1,0 +1,22 @@
+info:
+  name: addModels
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:8080/Maven/Models/addModels?idbrand=11&name=Camry
+  params:
+    - name: idbrand
+      value: "11"
+      type: query
+    - name: name
+      value: Camry
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

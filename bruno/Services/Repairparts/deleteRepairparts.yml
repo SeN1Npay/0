@@ -1,0 +1,19 @@
+info:
+  name: deleteRepairparts
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: http://localhost:8080/Maven/Repairparts/deleteRepairparts?idrepairpart=9
+  params:
+    - name: idrepairpart
+      value: "9"
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

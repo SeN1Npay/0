@@ -1,0 +1,19 @@
+info:
+  name: deleteCustomers
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: http://localhost:8080/Maven/Customers/deleteCustomers?idcustomer=15
+  params:
+    - name: idcustomer
+      value: "15"
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

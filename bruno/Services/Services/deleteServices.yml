@@ -1,0 +1,19 @@
+info:
+  name: deleteServices
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: http://localhost:8080/Maven/Services/deleteServices?idservice=13
+  params:
+    - name: idservice
+      value: "13"
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

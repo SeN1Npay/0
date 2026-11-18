@@ -1,0 +1,19 @@
+info:
+  name: deleteServiceadvisors
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: http://localhost:8080/Maven/Serviceadvisors/deleteServiceadvisors?idadvisor=12
+  params:
+    - name: idadvisor
+      value: "12"
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

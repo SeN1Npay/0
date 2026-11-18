@@ -1,0 +1,28 @@
+info:
+  name: addSpareparts
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:8080/Maven/Spareparts/addSpareparts?name=Масляный фильтр&article=OF-1234&price=500&stock=20
+  params:
+    - name: name
+      value: Масляный фильтр
+      type: query
+    - name: article
+      value: OF-1234
+      type: query
+    - name: price
+      value: "500"
+      type: query
+    - name: stock
+      value: "20"
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

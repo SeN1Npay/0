@@ -1,0 +1,19 @@
+info:
+  name: deleteSalaries
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: http://localhost:8080/Maven/Salaries/deleteSalaries?idsalary=12
+  params:
+    - name: idsalary
+      value: "12"
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

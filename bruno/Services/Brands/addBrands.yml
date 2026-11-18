@@ -1,0 +1,19 @@
+info:
+  name: addBrands
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:8080/Maven/Brands/addBrands?name=Dodge
+  params:
+    - name: name
+      value: Dodge
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,28 @@
+info:
+  name: updateRepairservices
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: http://localhost:8080/Maven/Repairservices/updateRepairservices?idrepair=9&idservice=9&quantity=9&idrepairservice=9
+  params:
+    - name: idrepair
+      value: "9"
+      type: query
+    - name: idservice
+      value: "9"
+      type: query
+    - name: quantity
+      value: "9"
+      type: query
+    - name: idrepairservice
+      value: "9"
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

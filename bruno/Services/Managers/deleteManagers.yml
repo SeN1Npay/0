@@ -1,0 +1,19 @@
+info:
+  name: deleteManagers
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: http://localhost:8080/Maven/Managers/deleteManagers?idmanager=12
+  params:
+    - name: idmanager
+      value: "12"
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,19 @@
+info:
+  name: deleteBrands
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: http://localhost:8080/Maven/Brands/deleteBrands?idbrand=13
+  params:
+    - name: idbrand
+      value: "13"
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,22 @@
+info:
+  name: updateManagers
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: http://localhost:8080/Maven/Managers/updateManagers?iduser=11&idmanager=12
+  params:
+    - name: iduser
+      value: "11"
+      type: query
+    - name: idmanager
+      value: "12"
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,25 @@
+info:
+  name: updateServices
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: http://localhost:8080/Maven/Services/updateServices?name=Замена масла&cost=1500&idservice=13
+  params:
+    - name: name
+      value: Замена масла
+      type: query
+    - name: cost
+      value: "1500"
+      type: query
+    - name: idservice
+      value: "13"
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

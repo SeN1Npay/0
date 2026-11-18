@@ -1,0 +1,37 @@
+info:
+  name: addRepairs
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:8080/Maven/Repairs/addRepairs?idautomobile=11&idmechanic=11&idadvisor=11&idbay=11&acceptancedate=2024-01-15&completiondate=2024-01-20&status=В работе
+  params:
+    - name: idautomobile
+      value: "11"
+      type: query
+    - name: idmechanic
+      value: "11"
+      type: query
+    - name: idadvisor
+      value: "11"
+      type: query
+    - name: idbay
+      value: "11"
+      type: query
+    - name: acceptancedate
+      value: 2024-01-15
+      type: query
+    - name: completiondate
+      value: 2024-01-20
+      type: query
+    - name: status
+      value: В работе
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,34 @@
+info:
+  name: addAutomobiles
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:8080/Maven/Automobiles/addAutomobiles?idcustomer=2&idmodel=2&vin=TEST000001&registrationnumber=A123BC154&productionyear=2018&photolink=/photos/car1.jpg
+  params:
+    - name: idcustomer
+      value: "2"
+      type: query
+    - name: idmodel
+      value: "2"
+      type: query
+    - name: vin
+      value: TEST000001
+      type: query
+    - name: registrationnumber
+      value: A123BC154
+      type: query
+    - name: productionyear
+      value: "2018"
+      type: query
+    - name: photolink
+      value: /photos/car1.jpg
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

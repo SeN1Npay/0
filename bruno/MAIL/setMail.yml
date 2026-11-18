@@ -1,0 +1,25 @@
+info:
+  name: setMail
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: http://localhost:8080/Maven/Mail/setMail?textMess=1&itemMess=2&filePath=/home/9669@stud.pgt.su/Загрузки/карты.jpeg
+  params:
+    - name: textMess
+      value: "1"
+      type: query
+    - name: itemMess
+      value: "2"
+      type: query
+    - name: filePath
+      value: /home/9669@stud.pgt.su/Загрузки/карты.jpeg
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

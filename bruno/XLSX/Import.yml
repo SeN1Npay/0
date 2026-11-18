@@ -1,0 +1,19 @@
+info:
+  name: Import
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: http://localhost:8080/Maven/Import/importUsers?filePath=/home/9669@stud.pgt.su/OpenideProjects/Maven/users.xlsx
+  params:
+    - name: filePath
+      value: /home/9669@stud.pgt.su/OpenideProjects/Maven/users.xlsx
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

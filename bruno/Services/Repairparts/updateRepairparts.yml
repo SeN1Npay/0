@@ -1,0 +1,28 @@
+info:
+  name: updateRepairparts
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: http://localhost:8080/Maven/Repairparts/updateRepairparts?idrepair=9&idsparepart=9&quantity=3&idrepairpart=9
+  params:
+    - name: idrepair
+      value: "9"
+      type: query
+    - name: idsparepart
+      value: "9"
+      type: query
+    - name: quantity
+      value: "3"
+      type: query
+    - name: idrepairpart
+      value: "9"
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,25 @@
+info:
+  name: updateRepairbays
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: http://localhost:8080/Maven/Repairbays/updateRepairbays?number=1&purpose=Диагностика&idbay=1
+  params:
+    - name: number
+      value: "1"
+      type: query
+    - name: purpose
+      value: Диагностика
+      type: query
+    - name: idbay
+      value: "1"
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

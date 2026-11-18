@@ -1,0 +1,55 @@
+info:
+  name: addUser
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: http://localhost:8080/Maven/addUsers?lastname=Иванов&firstname=Кирилл&middlename=Олегович&birthdate=2000-10-10&employmentdate=2020-01-01&passport=3123&snils=123213&email=213213&photolink=231233&login=213213&passwordhash=21321&status=123123&registrationcode=3213
+  params:
+    - name: lastname
+      value: Иванов
+      type: query
+    - name: firstname
+      value: Кирилл
+      type: query
+    - name: middlename
+      value: Олегович
+      type: query
+    - name: birthdate
+      value: 2000-10-10
+      type: query
+    - name: employmentdate
+      value: 2020-01-01
+      type: query
+    - name: passport
+      value: "3123"
+      type: query
+    - name: snils
+      value: "123213"
+      type: query
+    - name: email
+      value: "213213"
+      type: query
+    - name: photolink
+      value: "231233"
+      type: query
+    - name: login
+      value: "213213"
+      type: query
+    - name: passwordhash
+      value: "21321"
+      type: query
+    - name: status
+      value: "123123"
+      type: query
+    - name: registrationcode
+      value: "3213"
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

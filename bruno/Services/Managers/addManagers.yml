@@ -1,0 +1,19 @@
+info:
+  name: addManagers
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:8080/Maven/Managers/addManagers?iduser=11
+  params:
+    - name: iduser
+      value: "11"
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
